@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+nav {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(114, 113, 113);
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+#title {
+  color: #f2f0f1;
+}
+li {
+  margin: 10px;
+  text-align: justify;
+}
+#link {
+  margin: 20px 0px;
+  font-style: italic;
+  text-align: center;
+}
+#tribute-link {
+  color: #333;
+  opacity: 0.6;
+}
+#quote {
+  margin-top: 30px;
+}
+#img-caption {
+  font-size: 14px;
+  opacity: 0.4;
+  text-align: center;
+}
+#tribute-info {
+  margin-top: 30px;
+}
+main {
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  padding: 20px 40px;
+}
+footer {
+  background-color: rgb(114, 113, 113);
+  color: #f2f0f1;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#img-div {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#img-div > img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #img-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  li {
+    margin: 10px 10px 10px -10px;
+  }
+  main {
+    padding: 20px;
+  }
+}

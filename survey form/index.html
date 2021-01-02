@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Application</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <div id="img-div">
+        <img src="./undraw_people_search_wctu (1).svg" alt="" id="image"/>
+    </div>
+    <div class="form-container">
+        <h1 id="title">Job Search Application</h1>
+        <p id="description"> All fields are required</p>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label" class="sector">Name</label>
+            <input type="text" name="name" id="name" placeholder="Full Name"/>
+            <label for="email" id="email-label" class="sector">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Email address"/>
+            <label for="number" id="number-label" class="sector" class="sector">Telephone Number</label>
+            <input type="number" name="number" id="number" min="0" max="10000000000"/>
+
+            <label for="status" class="sector">Employment Status</label>
+            <select name="status" id="dropdown">
+                <option value="unemployed">Unemployed</option>
+                <option value="student">Student</option>
+                <option value="Self-employed">Self-employed</option>
+                <option value="retired">Retired</option>
+            </select>
+            
+            <p class="sector" id="sector">What sectors would you love to work in?</p>
+            <label for="technology"><input type="checkbox" name="technology" value="techology" checked/>Technology</label>
+            <label for="housing"><input type="checkbox" name="housing" value="housing"/>Housing</label>
+            <label for="power"><input type="checkbox" name="power" value="power" />Power</label>
+            <label for="teaching"><input type="checkbox" name="teaching" value="teaching" />Teaching</label>
+
+            <label for="gender" class="sector" id="gender">Gender </label>
+            <label for="gender"><input type="radio" name="gender" id="gender--male">Male </label>
+            <label for="gender"><input type="radio" name="gender" id="gender--female">Female</label>
+            <label class="sector" id="comment">Comments:</label>
+            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>&copy; Copyright 2020, David Asaolu</p>
+</footer>
+</body>
+</html>
